@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Guía de estilos: creando una guía de estilos con vida propia</title>
+
+		<meta name="description" content="Guía de estilos: creando una guía de estilos con vida propia">
+		<meta name="author" content="Joan Leon">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <section data-background="#00BCD4">
+					<h3>Joan Leon</h3>
+					<h4>@nucliweb</h4>
+				</section>
+        <section>
+					<h1>Guía de estilos</h1>
+					<h3>Creando una guía de estilos con vida propia</h3>
+				</section>
+
+        <section data-markdown data-background="#4CAF50">
+          ### ¿Que veremos?
+
+          * Tipos de guías de estilos
+          * Ejemplos de guías de estilos
+          * Herramientas
+        </section>
+
+        <section data-markdown data-background="#512DA8">
+          ### Tipos de Guias de estilos
+
+          * Content & editorial style guides
+          * Branding & identity style guides
+          * Development style guides & coding standards
+          * Human Interface Guidelines
+          * Frontend style guides
+        </section>
+
+        <section data-background="#0288D1">
+          <section>
+            <h3>Content & editorial style guides</h3>
+          </section>
+          <section data-markdown>
+            Voz y tono de [MailChimp](http://voiceandtone.com/) es uno de esos recursos, y es fantástico. Incluye ejemplos de cómo MailChimp proporciona información a los usuarios y también es educativo, proporcionando explicaciones de por qué algo se debe escribir de esa manera.
+          </section>
+          <section data-markdown>
+            > Es bueno para mantener lo que constituye la voz y tono de un sitio para evitar la confusión cuando varias personas diferentes escriben el contenido.
+          </section>
+        </section>
+
+        <section data-background="#00796B">
+          <section>
+            <h3>Branding & identity style guides</h3>
+          </section>
+          <section data-markdown>
+            Las guías de estilo de marca varían en detalle y complegidad.
+            Algunas son bastante ligeras, tales como [Firefox](https://www.mozilla.org/en-US/styleguide/identity/firefox/branding/), que establece los colores corporativos y la forma de utilizar el logotipo.
+
+            Otras marcas son mucho más estrictas y proporcionan una gran cantidad de detalles, como [British Airways guidelines (PDF)](http://www.lime-management.com/App_Themes/LimeManagementUK/Resources/brand_guidelines.pdf), que cubren todos los aspectos imaginables de la marca.
+          </section>
+          <section data-markdown>
+            > Una gran cantidad de guías de estilo de marca no se traducen bien del papel a la web, por lo que es importante tomar en cuenta las diferencias entre los medios de comunicación al ponerlas en conjunto.
+
+            Ejemplos [Brand Style Guide Examples](http://saijogeorge.com/brand-style-guide-examples/)
+          </section>
+        </section>
+
+        <section data-background="#F06292">
+          <section>
+            <h3>Development style guides & coding standards</h3>
+          </section>
+          <section data-markdown>
+            Estas son útiles cuando varias personas están trabajando en la misma base de código. Definen convenciones como si utilizar espacios o tabuladores, guiones bajos o camelCase en los selectores.
+
+            Obtendremos un código mantenible, y hacer que sea más fácil la colabaroación. Github tiene sus guidelines para [CSS](http://primercss.io/) o las  [Airbnb](https://github.com/airbnb/css).
+          </section>
+
+        </section>
+
+        <section data-background="#FF7043">
+          <section>
+            <h3>Human Interface Guidelines</h3>
+          </section>
+          <section data-markdown>
+            Aunque no son estrictamente sobre cuestiones de estilo, como los métodos de entrada por voz y gestos son cada día más populares, las pautas de **interacción** se han convertido en algo muy importante.
+          </section>
+          <section data-markdown>
+            Un ejemplo interesante es cómo Microsoft ha escrito sus guideline para el diseño de interfaces que define cómo se  puede interactuar con el uso de [Kinect para Xbox (PDF)](http://go.microsoft.com/fwlink/?LinkID=247735).
+          </section>
+        </section>
+
+        <section data-background="#455A64">
+          <section>
+            <h3>Frontend style guides</h3>
+          </section>
+          <section>
+            Las Frontend style guides se presentan de muchas formas, pero todas comparten un objetivo común: hacer que el mantenimiento del site más fácil.
+          </section>
+          <section data-markdown>
+            Están construidas específicamente para la web. La principal diferencia con los otros tipos de guías, es que utiliza código real y funciona en el navegador.
+
+            > No es un PDF o una serie de capturas de pantalla.
+          </section>
+          <section data-markdown>
+            Una Frontend style guides es una guía de documentación viva y crece orgánicamente con el site a lo largo de su vida útil.
+
+            El termino de [Markup Guide](http://www.mezzoblue.com/downloads/markupguide/) se atribulle por primera vez a Dave Shea.
+          </section>
+        </section>
+
+        <section data-markdown data-background="#616161">
+          ### Beneficios de una Frontend style guides
+
+          * Mejor código
+          * Educación
+          * Pruebas en navegadores y dispositivos
+          * Prototipos
+          * Integración con CMS
+          * Presentación del proyecto
+        </section>
+        <section data-markdown data-background="#e53935">
+          ### Inconvenientes
+
+          * "Tiempo para generar la guía"
+          * Generar una guía de un proyecto finalizado
+        </section>
+        <section data-markdown data-background="#1565C0">
+          ### Ejemplos
+
+          Lo primero que tenemos que tener en cuarta es publicar la guía lo antes posible.
+
+          * [Sierra](http://sierra-library.github.io/)
+          * [Starbucks](http://www.starbucks.com/static/reference/styleguide/)
+          * [BBC (Global Experience Language)](http://www.bbc.co.uk/gel)
+          * [Pattern Lab](http://patternlab.io/)
+          * [Salesforce](https://www.lightningdesignsystem.com)
+          * [Atlassian](https://docs.atlassian.com/aui/latest/docs/auiselect2.html)
+          * [Styleguide.io (Examples)](http://styleguides.io/examples.html)
+        </section>
+
+        <section data-markdown data-background="#7B1FA2">
+          ### Herramientas
+
+          * [Stylify Me](http://stylifyme.com/)
+          * [Typecast](http://typecast.com/)
+          * [Frontify](https://frontify.com/)
+          * [Pattern Library Generators](https://github.com/nucliweb/styleguide-generators)
+        </section>
+        <section data-background="#607D8B">
+          <section data-markdown>
+            ### KSS Node
+          </section>
+          <section data-markdown>
+            ### Aplicación
+            * [kss-node](http://kss-node.github.io/kss-node/)
+          </section>
+          <section data-markdown>
+            ### Plantillas
+
+            * [minimal-kss-node-template](https://github.com/funteractive/minimal-kss-node-template)
+            * [kss-node-template](https://github.com/sudhq/kss-node-template)
+            * [kss-node-template-such-as-github](https://github.com/1026/kss-node-template-such-as-github)
+            * [kss-node-template](https://github.com/htanjo/kss-node-template)
+            * [rapid-mockups-kss-node](https://github.com/asacolips/rapid-mockups-kss-node)
+            * [KSStrap](https://github.com/RichOren/KSStrap)
+          </section>
+          <section data-markdown>
+            ### Generator
+
+            * [kss-jade-react-generator](https://github.com/kotorieclair/kss-jade-react-generator)
+          </section>
+          <section data-markdown>
+            ### Grunt
+
+            * [grunt-kss-node](https://github.com/lidl-ecommerce/grunt-kss-node)
+          </section>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
