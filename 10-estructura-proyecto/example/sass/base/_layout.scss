@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $c-neutroLighter;
+}
+
+
+.componente {
+  @include span(12);
+
+  @media screen and (min-width: 320px) {
+    @include span(6);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include span(4);
+  }
+}
