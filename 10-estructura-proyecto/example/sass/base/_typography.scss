@@ -1,0 +1,43 @@
+html {
+  font-size: $global-font-size; // Define rem base;
+}
+
+body {
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+p, blockquote {
+  margin-top: 0;
+}
+
+h1,
+.t-h1 {
+  color: $c-primary;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2,
+.t-h2 {
+  color: $c-primaryDark;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3,
+.t-h3 {
+  color: $c-secondary;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h4, .t-h4,
+h5, .t-h5,
+h6, .t-h6 {  }
+
+p {
+  color: $c-secondary;
+}

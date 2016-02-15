@@ -1,0 +1,55 @@
+.Button {
+  appearance: none;
+  background-color: $c-primary;
+  background-image: linear-gradient(to bottom, $c-primary, $c-primaryDark);
+  border: 0;
+  border-radius: $bdrad-s;
+  box-shadow: $box-shadow;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $ff-sans;
+  font-size: $fz-s;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .5rem .75rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all $transition-fast ease-out;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: $c-primaryLight;
+    background-image: linear-gradient(to bottom, $c-primaryLight, $c-primary);
+    outline: 0;
+  }
+
+  &:active {
+    background-image: linear-gradient(to bottom, $c-primary, $c-primaryDark);
+    box-shadow: $box-shadow-inset;
+    transform: translateY(1px);
+  }
+
+  &[disabled],
+  &--disabled {
+    cursor: default;
+    background-image: linear-gradient(to bottom, $c-neutro, $c-neutroDark);
+
+    &:hover,
+    &:focus {
+      background-color: $c-neutro;
+      background-image: linear-gradient(to bottom, $c-neutro, $c-neutroDark);
+    }
+  }
+
+  &--full {
+    display: block;
+    width: 100%;
+  }
+
+  &--lime {
+    background: lime;
+  }
+}

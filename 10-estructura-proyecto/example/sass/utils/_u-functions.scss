@@ -1,0 +1,28 @@
+$global-font-size: 100% !default;
+
+// =Helpers
+// ------------------------------------------------------
+@function strip-unit($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function unitless-zero($number) {
+  $value: $number;
+
+  @if (type-of($value) == number) and strip-unit($value) == 0 {
+    $value: strip-unit($value);
+  }
+
+  @return $value;
+}
+
+@function root-font-size($html-font-size) {
+  @return (strip-unit($html-font-size) * 16)/100;
+}
+
+
+// =px to rem
+// ------------------------------------------------------
+@function rem($val) {
+  @return (strip-unit($val) / root-font-size($global-font-size)) * 1rem;
+}

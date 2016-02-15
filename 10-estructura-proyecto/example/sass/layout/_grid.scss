@@ -1,0 +1,48 @@
+// SUSY GRID SYSTEM
+// ----------------------------------------------------------------------------
+// http://susy.oddbird.net/
+
+// CUSTOM SETTINGS
+// --------------------------------------------------------
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 1/4, // The size of a gutter in relation to a single column
+  container: 970px
+);
+
+.Page-wrapper {
+  @include container;
+  background-color: #FFF;
+}
+
+.Grid {
+  &-row {
+    @include u-clearfix;
+  }
+
+  &-col {
+    &--1 { @include span(1); }
+    &--2 { @include span(2); }
+    &--3 { @include span(3); }
+    &--4 { @include span(4); }
+    &--5 { @include span(5); }
+    &--6 { @include span(6); }
+    &--7 { @include span(7); }
+    &--8 { @include span(8); }
+    &--9 { @include span(9); }
+    &--10 { @include span(10); }
+    &--11 { @include span(11); }
+    &--12 { @include span(12); }
+    &--omega {
+      float: right;
+      margin-right: 0;
+    }
+  }
+
+  &-push {
+    &--1 { @include push(1); }
+    &--2 { @include push(2); }
+  }
+}
+
+

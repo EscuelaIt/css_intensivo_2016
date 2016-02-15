@@ -1,0 +1,76 @@
+// TYPOGRAPHY
+// ----------------------------------------------------------------------------
+$global-font-size: 100% !default;
+$ff-sans: 'Open Sans', Arial, Verdana, sans-serif;
+
+$fz-xs: .75rem;     // 12px
+$fz-s: rem(14px);   // 14px
+$fz-m: 1rem;        // 16px
+$fz-l: rem(18px);   // 18px
+$fz-xl: 1.5rem;     // 24px
+$fz-xxl: rem(30px); // 30px
+
+
+// COLORS
+// ----------------------------------------------------------------------------
+$c-neutroLightest: #fcfaf9;
+$c-neutroLighter: #f5f0ec;
+$c-neutroLight: #e1dedc;
+$c-neutro: #cac6c3;
+$c-neutroDark: #959290;
+$c-neutroDarker: #5f5e5d;
+$c-neutroDarkest: #202020;
+
+$c-blue: #2d75f0;
+$c-blueLight: lighten(#2d75f0, 10%);
+
+$c-red: #e74c3d;
+$c-redDark: darken($c-red, 12%);
+$c-redLight: lighten($c-red, 6%);
+
+$c-yellow: #f39c12;
+$c-yellowLight: #feffa4;
+$c-yellowLightest: #ffffe5;
+
+
+$c-link: $c-red;
+$c-link--hover: $c-blue;
+
+$c-primaryDark: $c-redDark;
+$c-primary: $c-red;
+$c-primaryLight: $c-redLight;
+
+$c-secondary: $c-yellow;
+$c-secondaryLight: $c-blueLight;
+
+
+// UI
+// ----------------------------------------------------------------------------
+$box-shadow: 0 1px 2px rgba($c-neutroDarkest, .6);
+$box-shadow-inset: inset 1px 1px 2px rgba($c-neutroDarkest, .5);
+
+$bdrad-s: .25rem;
+$bdrad-m: .5rem;
+
+
+// MEDIA QUERIES
+// ----------------------------------------------------------------------------
+$mq-xs: 320px;
+$mq-s: 480px;
+$mq-m: 769px;
+$mq-l: 1012px;
+$mq-xl: 1300px;
+
+
+// TRANSITIONS
+// ----------------------------------------------------------------------------
+$transition-fast: all .3s ease-out;
+$transition: all .4s ease-out;
+$transition-slow: all .6s ease-out;
+$anim-speed: .3s;
+
+// Z-INDEX
+// ----------------------------------------------------------------------------
+$z-modal: 30;
+$z-dropdown: 20;
+$z-topbar: 10;
